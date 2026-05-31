@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h2>Currency Converter App!</h2>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form action="">
+                <div class="converter-container">
+                    <div class="input-area">
+                        <p for="amount" id="form-label">Enter Amount</p>
+                        <input type="number" id="amount" placeholder="Enter amount">
+                    </div>
+                    <div class="dropdown">
+
+                        <div class="from">
+                            <p for="from">From</p>
+                            <div class="select-container">
+                                <img src="https://flagsapi.com/US/flat/64.png" alt="USD Flag">
+                                <select name="from" id="from">
+                                </select>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <div class="to">
+                            <p for="to">To</p>
+                            <div class="select-container">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="INR Flag">
+                                <select name="to" id="to">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="result">1 USD = 83.33INR</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="convert-btn">Convert</button>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script src="countryCode.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
